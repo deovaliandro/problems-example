@@ -12,25 +12,27 @@ public class _1181 {
         angka = scan.nextInt();
         pilihan = scan.next();
 
-        for (int i=0;i<arr.length;i++){
-            for (int j=0; j<arr.length;j++){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
                 a = scan.nextDouble();
                 arr[i][j] = a;
             }
         }
 
-        for (int j=0; j<arr.length;j++){
+        for (int j = 0; j < arr.length; j++) {
             sum = sum + arr[angka][j];
         }
 
-        for (int j=0; j<arr.length;j++){
-            ave = sum/12;
+        for (int j = 0; j < arr.length; j++) {
+            ave = sum / 12;
         }
 
-        if (pilihan.equals("S")){
+        if (pilihan.equals("S")) {
             System.out.println(sum);
-        }else if (pilihan.equals("M")){
+        } else if (pilihan.equals("M")) {
             System.out.println(ave);
         }
+
+        scan.close();
     }
 }
