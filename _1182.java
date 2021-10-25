@@ -1,3 +1,4 @@
+// Kolom dalam Array
 import java.util.Scanner;
 
 public class _1182 {
@@ -12,25 +13,27 @@ public class _1182 {
         angka = scan.nextInt();
         pilihan = scan.next();
 
-        for (int i=0;i<arr.length;i++){
-            for (int j=0; j<arr.length;j++){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
                 a = scan.nextDouble();
                 arr[i][j] = a;
             }
         }
 
-        for (int j=0; j<arr.length;j++){
+        for (int j = 0; j < arr.length; j++) {
             sum = sum + arr[j][angka];
         }
 
-        for (int j=0; j<arr.length;j++){
-            ave = sum/12;
+        for (int j = 0; j < arr.length; j++) {
+            ave = sum / 12;
         }
 
-        if (pilihan.equals("S")){
-            System.out.printf("%.1f\n",sum);
-        }else if (pilihan.equals("M")){
-            System.out.printf("%.1f\n",ave);
+        if (pilihan.equals("S")) {
+            System.out.printf("%.1f\n", sum);
+        } else if (pilihan.equals("M")) {
+            System.out.printf("%.1f\n", ave);
         }
+
+        scan.close();
     }
 }
