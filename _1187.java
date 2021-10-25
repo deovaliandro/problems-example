@@ -1,3 +1,4 @@
+// Bagian Atas Diagonal Sekunder
 import java.util.Scanner;
 
 public class _1187 {
@@ -11,29 +12,30 @@ public class _1187 {
 
         pilihan = scan.next();
 
-        for (int i=0;i<arr.length;i++){
-            for (int j=0; j<arr.length;j++){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
                 a = scan.nextDouble();
                 arr[i][j] = a;
             }
         }
 
-        for (int i=0; i<=4;i++){
-            for (int j=angka;j<angka2;j++){
-                //System.out.println(i + " " + j);
+        for (int i = 0; i <= 4; i++) {
+            for (int j = angka; j < angka2; j++) {
+                // System.out.println(i + " " + j);
                 sum = sum + arr[i][j];
             }
             angka++;
             angka2--;
         }
 
-        ave = sum/30;
+        ave = sum / 30;
 
-
-        if (pilihan.equals("S")){
-            System.out.printf("%.1f\n",sum);
-        }else if (pilihan.equals("M")){
-            System.out.printf("%.1f\n",ave);
+        if (pilihan.equals("S")) {
+            System.out.printf("%.1f\n", sum);
+        } else if (pilihan.equals("M")) {
+            System.out.printf("%.1f\n", ave);
         }
+
+        scan.close();
     }
 }
