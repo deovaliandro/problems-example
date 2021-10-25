@@ -1,4 +1,4 @@
-// Bagian Atas Diagonal Sekunder
+// Bagian Atas
 import java.util.Scanner;
 
 public class _1187 {

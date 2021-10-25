@@ -1,3 +1,4 @@
+// Bagian Kanan
 import java.util.Scanner;
 
 public class _1190 {
@@ -11,34 +12,35 @@ public class _1190 {
 
         pilihan = scan.next();
 
-        for (int i=0;i<arr.length;i++){
-            for (int j=0; j<arr.length;j++){
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
                 a = scan.nextDouble();
                 arr[i][j] = a;
             }
         }
 
-        for (int i=1; i<arr.length;i++){
+        for (int i = 1; i < arr.length; i++) {
 
-            for (int j=angka;j<=angka2;j++){
-                //System.out.println(i + " " + j);
+            for (int j = angka; j <= angka2; j++) {
+                // System.out.println(i + " " + j);
                 sum = sum + arr[i][j];
             }
 
-            if (i<5){
+            if (i < 5) {
                 angka--;
-            }else if (i > 5){
+            } else if (i > 5) {
                 angka++;
             }
         }
 
-        ave = sum/30;
+        ave = sum / 30;
 
-
-        if (pilihan.equals("S")){
-            System.out.printf("%.1f\n",sum);
-        }else if (pilihan.equals("M")){
-            System.out.printf("%.1f\n",ave);
+        if (pilihan.equals("S")) {
+            System.out.printf("%.1f\n", sum);
+        } else if (pilihan.equals("M")) {
+            System.out.printf("%.1f\n", ave);
         }
+
+        scan.close();
     }
 }
